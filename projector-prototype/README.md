@@ -6,9 +6,6 @@
 
 LED回路と回路
 
-Device -> 投影筒基板 ( 子機 )
-Controller -> 構造球基板 ( 親機 )
-
 ### Problem
 
 - 全体的に基板が劣化していて不安定なので、新しくしたい。
@@ -52,6 +49,8 @@ Controller -> 構造球基板 ( 親機 )
 - 部品は可能な限り秋月等で入手できるようにする。
 
 ### Concept
+
+Device -> 投影筒基板 ( 子機 )、Controller -> 構造球基板 ( 親機 )
 
 ```mermaid
 flowchart TB
