@@ -99,3 +99,9 @@ flowchart TB
   https://akizukidenshi.com/catalog/g/gP-07457/
 
   ノイズ対策でシールド線がよさそう
+
+- 投影筒のLED  
+  https://akizukidenshi.com/catalog/g/gI-06966/
+
+  現状、600 mA で駆動されている。  
+  VF：2.95V@IF=350mA、3.25V@IF=1500mA
