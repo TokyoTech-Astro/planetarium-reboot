@@ -1,5 +1,13 @@
 # Documents
 
+## Wiki
+- 旧 Wiki ページ
+  
+  http://titechplanetarium.cswiki.jp/
+  
+  ユーザー名：titechastroclub  
+  パスワード: mercury
+
 ## File
 
 - 回路図.pdf
@@ -38,4 +46,4 @@
 
   - 流星投影機のArduinoプログラム
 
-- **昼光のハードウェアプログラムはどこ～？**
+- **昼光のハードウェアプログラムはどこにある？**
