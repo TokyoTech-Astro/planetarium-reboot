@@ -4,7 +4,7 @@
 
 [開発記録](https://github.com/TokyoTech-Astro/planetarium-reboot/discussions/7)
 
-### Concept
+## Concept
 
 ```mermaid
 flowchart TB
@@ -28,7 +28,7 @@ flowchart TB
   構造球基板 --> |DMX| 投影筒基板1 --> |DMX| 投影筒基板2
 ```
 
-### Idea
+## Idea
 
 - スイッチング方式のLEDドライバを用いる。
   
@@ -58,3 +58,9 @@ flowchart TB
   - 高電圧 + スイッチング駆動で電流を減らせる。-> 損失減、配線に有利。
 
 - 部品は可能な限り秋月等で入手できるようにする。
+
+## v0.1
+
+- 動作確認とFirmware開発のために数個製作予定
+
+![model-top](./device/pcb/version/v0.1/model-top.png)
