@@ -34,7 +34,7 @@
 - 既存のシステムを動かせるようにする。
 
 - 使いやすいように改良する。
-  - [remake-projector](https://github.com/TokyoTech-Astro/planetarium-reboot/tree/remake-projector)
+  - [remake-projector](https://github.com/TokyoTech-Astro/planetarium-reboot/tree/remake-projector/prototype-projector)
 
 ## Documents
 
