@@ -75,15 +75,15 @@ flowchart TB
 ```
 
 - LEDドライバ：CL6808  
-  <https://akizukidenshi.com/catalog/g/gI-06278/>
+  https://akizukidenshi.com/catalog/g/gI-06278/
   
   Max 1.2A  
 
 - 投影筒マイコン：ATTiny 202  
-  <https://akizukidenshi.com/catalog/g/gI-15731/>  
+  https://akizukidenshi.com/catalog/g/gI-15731/
 
   低価格、Arduino IDE 使用可能  
   不足気味・・・
 
 - RS485ドライバ：MAX485ED  
-  <https://akizukidenshi.com/catalog/g/gI-16568/>
+  https://akizukidenshi.com/catalog/g/gI-16568/
