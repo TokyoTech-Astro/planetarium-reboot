@@ -16,11 +16,12 @@
 
 - 構造球
   - 恒星投影筒
-  - ( 一等星投影筒 )
+  - 星座絵投影筒
+  - 一等星投影筒
 
 - 昼光
  
-- ( 流星投影機 )
+- 流星投影機
 
 - スピーカー
 
@@ -33,6 +34,7 @@
 - 既存のシステムを動かせるようにする。
 
 - 使いやすいように改良する。
+  - [remake-projector](https://github.com/TokyoTech-Astro/planetarium-reboot/tree/remake-projector)
 
 ## Documents
 
