@@ -83,7 +83,21 @@ flowchart TB
   https://akizukidenshi.com/catalog/g/gI-15731/
 
   低価格、Arduino IDE 使用可能  
-  不足気味・・・
+  不足気味・・・  
+  [これ](https://www.arduino.cc/reference/en/libraries/dmxserial/)をATTiny202用に改造してDMXを実装できないか。
 
 - RS485ドライバ：MAX485ED  
   https://akizukidenshi.com/catalog/g/gI-16568/
+
+- 構造球基盤マイコン：Seeed Studio XIAO ESP32C3  
+  https://akizukidenshi.com/catalog/g/gM-17454/
+
+  WiFiを使いたいのでESP32、Arduino IDE も使用可能  
+  ESP32-WROOM-32に対して書き込み回路が不要なので楽かも  
+  [外部アンテナは利得がいいっぽい](https://intellectualcuriosity.hatenablog.com/entry/2022/09/03/143619)  
+  [鯖実装は多分楽。](https://github.com/me-no-dev/ESPAsyncWebServer)
+
+- 4芯シールドのケーブル  
+  https://akizukidenshi.com/catalog/g/gP-07457/
+
+  ノイズ対策でシールド線がよさそう
