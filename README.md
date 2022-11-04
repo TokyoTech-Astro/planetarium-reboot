@@ -4,13 +4,29 @@
 
 新刊活動に向けて再始動中！
 
-## Description
+## About This Repository
 
-光学式の投影機とエアドームの自作プラネタリウム。
+- [昔の資料](/docs)
 
-数年前まで新刊活動や工大祭で使用していた。コロナや工大祭の中止の影響でノウハウが失われつつある。
+  - 資料まとめ
 
-### Components
+- [Discussions](/discussions)
+
+  - メモ、活動記録とか
+
+- Wiki（準備中）
+
+  - 使い方、組み立て方の説明
+
+
+## Activity
+
+- 既存のシステムを動かせるようにする。
+
+- 使いやすいように改良する。
+  - [remake-projector](/tree/remake-projector/prototype-projector)
+
+## Components
 
 - ドーム
 
@@ -28,14 +44,3 @@
 - 制御システム
 
 - 番組
-
-## Activity
-
-- 既存のシステムを動かせるようにする。
-
-- 使いやすいように改良する。
-  - [remake-projector](https://github.com/TokyoTech-Astro/planetarium-reboot/tree/remake-projector/prototype-projector)
-
-## Documents
-
-このリポジトリに開発データとドキュメントをまとめられたらいいなぁ・・・
