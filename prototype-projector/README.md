@@ -2,20 +2,31 @@
 
 投影筒まわりを新しくするための試作
 
-## Circuit
+[開発記録](https://github.com/TokyoTech-Astro/planetarium-reboot/discussions/7)
 
-LED回路と回路
+### Concept
 
-### Problem
+```mermaid
+flowchart TB
+  subgraph 構造球基板
+    A(ルータ) --> |WiFi| B(マイコン)
+    B --> |UART| C(RS485ドライバ)
+  end
 
-- 全体的に基板が劣化していて不安定なので、新しくしたい。
+  subgraph 投影筒基板1
+    D1(RS485ドライバ) --> |UART| E1(マイコン)
+    E1 --> |PWM| F1(LEDドライバ)
+    F1 --> G1(パワーLED)
+  end
 
-- パワーLEDの電流制限にセメント抵抗を用いており効率が悪く、発熱がひどい。
+  subgraph 投影筒基板2
+    D2(RS485ドライバ) --> |UART| E2(マイコン)
+    E2 --> |PWM| F2(LEDドライバ)
+    F2 --> G2(パワーLED)
+  end
 
-- 32個の投影筒は個別に制御できない。まとめてON、OFFできるのみ。
-  演出として、地平線より下の領域が消灯できるほうがいい。過去に個別にPWM制御できた時代があるらしいが、ノイズがひどかったため、廃止されたらしい。
-
-- 1枚の基板に32個の点灯回路を配置していて、保守性が悪い。
+  構造球基板 --> |DMX| 投影筒基板1 --> |DMX| 投影筒基板2
+```
 
 ### Idea
 
@@ -47,61 +58,3 @@ LED回路と回路
   - 高電圧 + スイッチング駆動で電流を減らせる。-> 損失減、配線に有利。
 
 - 部品は可能な限り秋月等で入手できるようにする。
-
-### Concept
-
-```mermaid
-flowchart TB
-  subgraph 構造球基板
-    A(ルータ) --> |WiFi| B(マイコン)
-    B --> |UART| C(RS485ドライバ)
-  end
-
-  subgraph 投影筒基板1
-    D1(RS485ドライバ) --> |UART| E1(マイコン)
-    E1 --> |PWM| F1(LEDドライバ)
-    F1 --> G1(パワーLED)
-  end
-
-  subgraph 投影筒基板2
-    D2(RS485ドライバ) --> |UART| E2(マイコン)
-    E2 --> |PWM| F2(LEDドライバ)
-    F2 --> G2(パワーLED)
-  end
-
-  構造球基板 --> |DMX| 投影筒基板1 --> |DMX| 投影筒基板2
-```
-
-- LEDドライバ：CL6808  
-  https://akizukidenshi.com/catalog/g/gI-06278/
-  
-  Max 1.2A  
-
-- 投影筒マイコン：ATTiny 202  
-  https://akizukidenshi.com/catalog/g/gI-15731/
-
-  低価格、Arduino IDE 使用可能  
-  不足気味・・・  
-  [これ](https://www.arduino.cc/reference/en/libraries/dmxserial/)をATTiny202用に改造してDMXを実装できないか。
-
-- RS485ドライバ：MAX485ED  
-  https://akizukidenshi.com/catalog/g/gI-16568/
-
-- 構造球基盤マイコン：Seeed Studio XIAO ESP32C3  
-  https://akizukidenshi.com/catalog/g/gM-17454/
-
-  WiFiを使いたいのでESP32、Arduino IDE も使用可能  
-  ESP32-WROOM-32に対して書き込み回路が不要なので楽かも  
-  [外部アンテナは利得がいいっぽい](https://intellectualcuriosity.hatenablog.com/entry/2022/09/03/143619)  
-  [鯖実装は多分楽。](https://github.com/me-no-dev/ESPAsyncWebServer)
-
-- 4芯シールドのケーブル  
-  https://akizukidenshi.com/catalog/g/gP-07457/
-
-  ノイズ対策でシールド線がよさそう
-
-- 投影筒のLED  
-  https://akizukidenshi.com/catalog/g/gI-06966/
-
-  現状、600 mA で駆動されている。  
-  VF：2.95V@IF=350mA、3.25V@IF=1500mA
