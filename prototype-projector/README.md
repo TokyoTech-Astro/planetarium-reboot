@@ -50,28 +50,26 @@ LED回路と回路
 
 ### Concept
 
-Device -> 投影筒基板 ( 子機 )、Controller -> 構造球基板 ( 親機 )
-
 ```mermaid
 flowchart TB
-  subgraph Controller
+  subgraph 構造球基板
     A(ルータ) --> |WiFi| B(マイコン)
     B --> |UART| C(RS485ドライバ)
   end
 
-  subgraph Device1
+  subgraph 投影筒基板1
     D1(RS485ドライバ) --> |UART| E1(マイコン)
     E1 --> |PWM| F1(LEDドライバ)
     F1 --> G1(パワーLED)
   end
 
-  subgraph Device2
+  subgraph 投影筒基板2
     D2(RS485ドライバ) --> |UART| E2(マイコン)
     E2 --> |PWM| F2(LEDドライバ)
     F2 --> G2(パワーLED)
   end
 
-  Controller --> |DMX| Device1 --> |DMX| Device2
+  構造球基板 --> |DMX| 投影筒基板1 --> |DMX| 投影筒基板2
 ```
 
 - LEDドライバ：CL6808  
