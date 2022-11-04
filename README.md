@@ -10,7 +10,7 @@
 
   - 資料まとめ
 
-- [Discussions](/discussions)
+- [Discussions](https://github.com/TokyoTech-Astro/planetarium-reboot/discussions)
 
   - メモ、活動記録とか
 
@@ -24,7 +24,7 @@
 - 既存のシステムを動かせるようにする。
 
 - 使いやすいように改良する。
-  - [remake-projector](/tree/remake-projector/prototype-projector)
+  - [remake-projector](https://github.com/TokyoTech-Astro/planetarium-reboot/tree/remake-projector/prototype-projector)
 
 ## Components
 
