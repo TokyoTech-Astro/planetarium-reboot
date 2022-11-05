@@ -1,46 +1,33 @@
-# TokyoTech-Astro Planetarium
+# Projector Prototype
 
-東工大天文研究部のプラネタリウムプロジェクト。
+投影筒まわりを新しくするための試作
 
-新刊活動に向けて再始動中！
+## Concept
 
-## About This Repository
+```mermaid
+flowchart TB
+  subgraph 構造球基板
+    A(ルータ) --> |WiFi| B(マイコン)
+    B --> |UART| C(RS485ドライバ)
+  end
 
-- [昔の資料](/docs)
+  subgraph 投影筒基板1
+    D1(RS485ドライバ) --> |UART| E1(マイコン)
+    E1 --> |PWM| F1(LEDドライバ)
+    F1 --> G1(パワーLED)
+  end
 
-  - 資料まとめ
+  subgraph 投影筒基板2
+    D2(RS485ドライバ) --> |UART| E2(マイコン)
+    E2 --> |PWM| F2(LEDドライバ)
+    F2 --> G2(パワーLED)
+  end
 
-- [Discussions](https://github.com/TokyoTech-Astro/planetarium-reboot/discussions)
+  構造球基板 --> |DMX| 投影筒基板1 --> |DMX| 投影筒基板2
+```
 
-  - メモ、活動記録とか
+## Device v0.1
 
-- Wiki（準備中）
+- 動作確認とFirmware開発のために数個製作予定
 
-  - 使い方、組み立て方の説明
-
-
-## Activity
-
-- 既存のシステムを動かせるようにする。
-
-- 使いやすいように改良する。
-  - [remake-projector](https://github.com/TokyoTech-Astro/planetarium-reboot/tree/remake-projector/prototype-projector)
-
-## Components
-
-- ドーム
-
-- 構造球
-  - 恒星投影筒
-  - 星座絵投影筒
-  - 一等星投影筒
-
-- 昼光
- 
-- 流星投影機
-
-- スピーカー
-
-- 制御システム
-
-- 番組
+![model-top](./device/pcb/version/v0.1/model-top.png)
