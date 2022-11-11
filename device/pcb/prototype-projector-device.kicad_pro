@@ -379,7 +379,6 @@
         "microvia_drill": 0.1,
         "name": "Power",
         "nets": [
-          "+12V",
           "Net-(D1-Pad2)",
           "Net-(J1-Pad1)",
           "Net-(J1-Pad2)"
@@ -440,7 +439,7 @@
       "workbook_filename": ""
     },
     "page_layout_descr_file": "",
-    "plot_directory": "",
+    "plot_directory": "version/v0.1.1/",
     "spice_adjust_passive_values": false,
     "spice_external_command": "spice \"%I\"",
     "subpart_first_id": 65,

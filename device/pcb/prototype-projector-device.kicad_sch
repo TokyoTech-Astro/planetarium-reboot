@@ -730,11 +730,11 @@
         )
       )
     )
-    (symbol "power:+12V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
+    (symbol "power:+24V" (power) (pin_names (offset 0)) (in_bom yes) (on_board yes)
       (property "Reference" "#PWR" (id 0) (at 0 -3.81 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "Value" "+12V" (id 1) (at 0 3.556 0)
+      (property "Value" "+24V" (id 1) (at 0 3.556 0)
         (effects (font (size 1.27 1.27)))
       )
       (property "Footprint" "" (id 2) (at 0 0 0)
@@ -746,10 +746,10 @@
       (property "ki_keywords" "power-flag" (id 4) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (property "ki_description" "Power symbol creates a global label with name \"+12V\"" (id 5) (at 0 0 0)
+      (property "ki_description" "Power symbol creates a global label with name \"+24V\"" (id 5) (at 0 0 0)
         (effects (font (size 1.27 1.27)) hide)
       )
-      (symbol "+12V_0_1"
+      (symbol "+24V_0_1"
         (polyline
           (pts
             (xy -0.762 1.27)
@@ -775,9 +775,9 @@
           (fill (type none))
         )
       )
-      (symbol "+12V_1_1"
+      (symbol "+24V_1_1"
         (pin power_in line (at 0 0 90) (length 0) hide
-          (name "+12V" (effects (font (size 1.27 1.27))))
+          (name "+24V" (effects (font (size 1.27 1.27))))
           (number "1" (effects (font (size 1.27 1.27))))
         )
       )
@@ -1430,6 +1430,22 @@
     (pin "2" (uuid bb0938ac-034c-4272-bd91-d7cbd5a5f870))
   )
 
+  (symbol (lib_id "power:+24V") (at 118.11 44.45 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid 0d9deca6-cb27-4133-9530-3b439cf79648)
+    (property "Reference" "#PWR0101" (id 0) (at 118.11 48.26 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+24V" (id 1) (at 118.11 40.8742 0))
+    (property "Footprint" "" (id 2) (at 118.11 44.45 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 118.11 44.45 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid b68f4a82-ea3d-423d-838c-7258b853127f))
+  )
+
   (symbol (lib_id "power:GND") (at 97.79 128.27 0) (unit 1)
     (in_bom yes) (on_board yes)
     (uuid 100c776a-f244-4aef-bbc6-a2c0200e4444)
@@ -1519,22 +1535,6 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 19225744-2e04-4b11-81b9-3f33cbb5b674))
-  )
-
-  (symbol (lib_id "power:+12V") (at 243.84 48.26 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid 1c39cee8-2999-48c6-ba34-4b6db5f1e091)
-    (property "Reference" "#PWR018" (id 0) (at 243.84 52.07 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+12V" (id 1) (at 243.84 44.6842 0))
-    (property "Footprint" "" (id 2) (at 243.84 48.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 243.84 48.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 3cf4ba91-6711-47e9-be7b-7a9d202aa848))
   )
 
   (symbol (lib_id "power:GND") (at 43.18 58.42 0) (unit 1)
@@ -1855,7 +1855,7 @@
     (property "Reference" "TP1" (id 0) (at 45.847 110.1633 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "+12V" (id 1) (at 45.847 112.7002 0)
+    (property "Value" "+24V" (id 1) (at 45.847 112.7002 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm" (id 2) (at 49.53 114.3 0)
@@ -1865,22 +1865,6 @@
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 18099aed-5a7d-440d-b730-a442ab406889))
-  )
-
-  (symbol (lib_id "power:+12V") (at 118.11 44.45 0) (unit 1)
-    (in_bom yes) (on_board yes) (fields_autoplaced)
-    (uuid a7024ceb-9aa6-44ec-9cc3-6060017540b3)
-    (property "Reference" "#PWR09" (id 0) (at 118.11 48.26 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+12V" (id 1) (at 118.11 40.8742 0))
-    (property "Footprint" "" (id 2) (at 118.11 44.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (id 3) (at 118.11 44.45 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid fe8bef2c-1106-42dc-b978-1ba4cea6ddac))
   )
 
   (symbol (lib_id "Device:C") (at 118.11 53.34 0) (unit 1)
@@ -1966,20 +1950,20 @@
     (pin "1" (uuid 261fe62b-f3b4-4d63-9d78-9d6d205add10))
   )
 
-  (symbol (lib_id "power:+12V") (at 67.31 113.03 0) (unit 1)
-    (in_bom yes) (on_board yes)
-    (uuid ccfaba03-96ff-4759-ac10-8499ad037b49)
-    (property "Reference" "#PWR04" (id 0) (at 67.31 116.84 0)
+  (symbol (lib_id "power:+24V") (at 243.84 48.26 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid c75730b6-b7ac-40cd-b968-25dcd70fe283)
+    (property "Reference" "#PWR0102" (id 0) (at 243.84 52.07 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "+12V" (id 1) (at 67.31 109.4542 0))
-    (property "Footprint" "" (id 2) (at 67.31 113.03 0)
+    (property "Value" "+24V" (id 1) (at 243.84 44.6842 0))
+    (property "Footprint" "" (id 2) (at 243.84 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (id 3) (at 67.31 113.03 0)
+    (property "Datasheet" "" (id 3) (at 243.84 48.26 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (pin "1" (uuid cf9592bb-d8d5-4c12-96f9-a4e09de55c2d))
+    (pin "1" (uuid b7d97c27-3022-404e-834f-14343dc8bf0a))
   )
 
   (symbol (lib_id "Device:C") (at 67.31 123.19 0) (unit 1)
@@ -1988,13 +1972,13 @@
     (property "Reference" "C2" (id 0) (at 70.231 122.0216 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
-    (property "Value" "1u" (id 1) (at 70.231 124.333 0)
+    (property "Value" "1u50V" (id 1) (at 70.231 124.333 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Footprint" "Capacitor_SMD:C_0603_1608Metric" (id 2) (at 68.2752 127 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "https://akizukidenshi.com/catalog/g/gP-16993/" (id 3) (at 67.31 123.19 0)
+    (property "Datasheet" "https://akizukidenshi.com/catalog/g/gP-15331/" (id 3) (at 67.31 123.19 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 48e3afd3-cca4-4b9f-af50-fdd99b15f1c6))
@@ -2019,6 +2003,22 @@
     (pin "1" (uuid 5c5d70c5-40cd-4c21-b954-bdf3ef51916d))
     (pin "2" (uuid 71d2d4e3-3e4a-4089-b663-cf2439b0630a))
     (pin "3" (uuid b7500ee5-870b-4d43-a268-201b4340e466))
+  )
+
+  (symbol (lib_id "power:+24V") (at 67.31 113.03 0) (unit 1)
+    (in_bom yes) (on_board yes) (fields_autoplaced)
+    (uuid dffb01eb-3d82-49af-a97e-a460c55974cf)
+    (property "Reference" "#PWR0103" (id 0) (at 67.31 116.84 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Value" "+24V" (id 1) (at 67.31 109.4542 0))
+    (property "Footprint" "" (id 2) (at 67.31 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (property "Datasheet" "" (id 3) (at 67.31 113.03 0)
+      (effects (font (size 1.27 1.27)) hide)
+    )
+    (pin "1" (uuid d100773d-d630-4063-be70-73fb109ce124))
   )
 
   (symbol (lib_id "Device:C") (at 97.79 123.19 0) (unit 1)
@@ -2168,9 +2168,6 @@
     (path "/73194ad8-c540-415e-88f6-e5327ee5885c"
       (reference "#PWR03") (unit 1) (value "GND") (footprint "")
     )
-    (path "/ccfaba03-96ff-4759-ac10-8499ad037b49"
-      (reference "#PWR04") (unit 1) (value "+12V") (footprint "")
-    )
     (path "/97dede01-e987-45b8-b767-f5c2b60da356"
       (reference "#PWR05") (unit 1) (value "GND") (footprint "")
     )
@@ -2182,9 +2179,6 @@
     )
     (path "/100c776a-f244-4aef-bbc6-a2c0200e4444"
       (reference "#PWR08") (unit 1) (value "GND") (footprint "")
-    )
-    (path "/a7024ceb-9aa6-44ec-9cc3-6060017540b3"
-      (reference "#PWR09") (unit 1) (value "+12V") (footprint "")
     )
     (path "/4f84328a-acf9-43ca-9fb6-211ab483adc4"
       (reference "#PWR010") (unit 1) (value "GND") (footprint "")
@@ -2210,14 +2204,20 @@
     (path "/63615680-038b-4f8a-b51f-78ed437fae00"
       (reference "#PWR017") (unit 1) (value "GND") (footprint "")
     )
-    (path "/1c39cee8-2999-48c6-ba34-4b6db5f1e091"
-      (reference "#PWR018") (unit 1) (value "+12V") (footprint "")
+    (path "/0d9deca6-cb27-4133-9530-3b439cf79648"
+      (reference "#PWR0101") (unit 1) (value "+24V") (footprint "")
+    )
+    (path "/c75730b6-b7ac-40cd-b968-25dcd70fe283"
+      (reference "#PWR0102") (unit 1) (value "+24V") (footprint "")
+    )
+    (path "/dffb01eb-3d82-49af-a97e-a460c55974cf"
+      (reference "#PWR0103") (unit 1) (value "+24V") (footprint "")
     )
     (path "/7f8864a4-f5ec-409d-b98e-545e551e51c3"
       (reference "C1") (unit 1) (value "0.1u") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/d09047f0-010e-4f5b-8e9a-bae165b62416"
-      (reference "C2") (unit 1) (value "1u") (footprint "Capacitor_SMD:C_0603_1608Metric")
+      (reference "C2") (unit 1) (value "1u50V") (footprint "Capacitor_SMD:C_0603_1608Metric")
     )
     (path "/e9acdb60-f32b-45d4-bc96-0d7838d4b2ad"
       (reference "C3") (unit 1) (value "0.1u") (footprint "Capacitor_SMD:C_0603_1608Metric")
@@ -2256,7 +2256,7 @@
       (reference "R2") (unit 1) (value "1k") (footprint "Resistor_SMD:R_0603_1608Metric")
     )
     (path "/9b3e521f-dacc-439a-b418-7d1ac6ead2ba"
-      (reference "TP1") (unit 1) (value "+12V") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
+      (reference "TP1") (unit 1) (value "+24V") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
     )
     (path "/c7036316-2fd2-4fc4-b239-a2b25e857406"
       (reference "TP2") (unit 1) (value "GND") (footprint "TestPoint:TestPoint_THTPad_D2.0mm_Drill1.0mm")
